@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buton Yapımı</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+</head>
+<body>
+    <style>
+        body{
+            background: gray;
+            margin: 0;
+            padding: 0;
+
+
+        }
+        
+        
+        .btn{
+            background: #ffc107;
+            width: 200px;
+            height: 60px;
+            top: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            cursor: pointer;
+
+            }
+            .btn::before{
+                color: white;
+                font-family: sans-serif;
+                content: "By: Murat Pembegül";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform:translate(-50%, -50%);
+                font-size: 20px;
+                transition: all 0.5s;
+
+
+            }
+            .btn:hover::before{
+                top: -30px;
+
+            }
+            .btn::after{
+                font-family: "Ionicons";
+                content: '\f141';
+                color: red;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                top:140%;
+                font-size: 40px;
+                transition: all 0.5s;
+
+
+            }
+            .btn:hover::after{
+                top: 50%;
+
+            }
+
+
+
+    </style>
+    <div class="btn"></div>
+</body>
+</html>
